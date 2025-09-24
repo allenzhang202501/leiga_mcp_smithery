@@ -324,7 +324,7 @@ class LeigaOpenAPIClient {
     const issueId = await this.resolveIssueId(issueIdOrNumber);
     return await this.request<LeigaResponse<ApiCustomFieldVO[]>>("/issue/mcp-issue-select-options", {
       method: "POST",
-      body: JSON.stringify({ id: issueId})
+      body: JSON.stringify({ id: issueId })
     });
   }
 
